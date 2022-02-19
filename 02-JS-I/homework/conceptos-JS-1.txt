@@ -1,0 +1,24 @@
+Variables:
+
+Una variable, en programacion, es un espacio de memoria reservado para poder almacenar distintos tipos de datos segun lo vallamos necesitando. Poniendolo un nombre podemos hacer referencia a ella.
+
+Strings:
+
+Las cadenas de texto son bloques de este tipo, formados por caracteres. Se definen entre comillas, ya sea doble o simple.
+Toda cadena entre comillas sera un string, incluso las vacias ("").
+
+Funciones:
+
+las funciones o metodos son bloques de codigo, que en el caso de javascript se almacenan en objetos invocables, que se utilizan para llevar a cabo determinadas acciones, como por ejemplo: mostrar un mensaje, modificar los valores de variables, crear nuevas, eliminarlas, etc.
+La funcion (que puede o no tener un nombre definido) puede tomar variables externas a su "bloque" a traves de sus argumentos, teniendo asi acceso a sus valores. Con excepcion de los objetos, si se modifica el valor de ellas, al retornar al flujo de programa no se guardan los cambios que se hayan realizado en el metodo.
+La palabra clave 'return' se utiliza para indicar una salida de la funcion, y en el caso que no se indique, la funcion se ejecutara hasta la ultima linea de codigo accesible en el mismo, retornando automaticamente (sin valor alguno).
+Los metodos pueden o no retornar un valor, que debe ser almacenado en una variable para no perderse.
+
+Declaracion 'if':
+
+Se utiliza este operador de control de flujo para controlar la ejecucion del codigo, seleccionando cuando queremos que se ejecuten determinadas secciones del programa.
+Si se cumple la condicion de este operador se ejecutara el codigo asociado a este, en caso contrario se lo "saltara".
+
+Valores booleanos:
+
+Son tipos de datos que solo puede tener alguno de estos dos valores: true (1) o false (0). En javascript se suelen utilizar para determinar si se cumple o no una condicion, en conjunto con los operadores de control de flujo.
