@@ -1,0 +1,9 @@
+Arrays:
+
+Se trata de un arreglo o coleccion de datos, que a diferencia de los demas tipos de datos basicos, puede contener mas de un valor. En javascript pueden contener mas de un tipo de dato, incluidos otros arrays.
+Para definirlo se utilizan los corchetes separando con comas sus elementos, pudiendo ininicializarlo como una matriz vacia (var mi_array = []).
+Para acceder a un elemento en particular se utilizan los indices, siendo las posiciones en las cuales se van "alojando" sus datos. El primer elemento que se agrega se referencia con el indice 0, mientras que cada elemento insertado incrementa este en uno.
+Contiene diversos atributos incorporados propio de su tipo de dato, entre los cuales 'lentgh' retornara la cantidad de elemontos del arreglo.
+Ademas, contiene distintos metodos, entre los cuales se encuentran:
+- Se puede insertar elementos al final del array (indice = miArray.length - 1) con el metodo 'push'. Idem con 'shift' pero en la primera posicion (indice = 0), "corriendo" el resto de los elementos (indice + 1).
+- La funcion 'pop' elimina el ultimo elemento, reduciendo su cantidad de datos en 1. 'unshift' hace lo mismo pero con el primero, acomodando el array para ajustarse a la modificacion (indice - 1).

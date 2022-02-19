@@ -1,6 +1,6 @@
 Declaracion 'for':
 
-Se trata de un bucle, es decir, un bloque de codigo el cual se repite su ejecucion n veces ientras se cumpla una condicion. 
+Se trata de un bucle, es decir, un bloque de codigo el cual se repite su ejecucion n veces mientras se cumpla una condicion. 
 A diferencia de otros bucles, tales como el 'while' y 'do while', se utiliza por lo general cuando la cantidad de repeticiones que queremos esta definida por una o mas variables. Por ejemplo, si queremos recorrer un array de numeros para encontrar el maximo utilizaremos un 'for', ya que la cantidad de repeticiones sera igual a la cantidad de numeros del arreglo.
 Se construye con tres parametros, separados con (;):
 - El primero es la declaracion de la o las variales que se utilizara para determinar la cantidad de repeticiones. 
