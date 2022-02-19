@@ -1,0 +1,17 @@
+Declaracion 'for':
+
+Se trata de un bucle, es decir, un bloque de codigo el cual se repite su ejecucion n veces ientras se cumpla una condicion. 
+A diferencia de otros bucles, tales como el 'while' y 'do while', se utiliza por lo general cuando la cantidad de repeticiones que queremos esta definida por una o mas variables. Por ejemplo, si queremos recorrer un array de numeros para encontrar el maximo utilizaremos un 'for', ya que la cantidad de repeticiones sera igual a la cantidad de numeros del arreglo.
+Se construye con tres parametros, separados con (;):
+- El primero es la declaracion de la o las variales que se utilizara para determinar la cantidad de repeticiones. 
+- El segundo es la condicion, que mientras se cumpla (true) el bucle continuara. Esta se evaluara al comienzo de cada bucle.
+- El ultimo parametro se utiliza para modificar la o las variables. Esta accion se ejecuta al final del bloque en cada bucle.
+No es necesario que se ejecute todo el bloque de codigo en cada bucle. Si lo deseamos, se puede utilizar la palara clave 'continue' para saltar al siguiente bucle.
+Si deseamos cortar el bloque en cualquier momento se utiliza la sentencia 'break'.
+
+Operadores logicos &&, ||, !:
+
+Son aquellos operadores que se utilizan para evaluar expresiones, en valores booleanos.
+AND (&&): Devuelve verdadero si y solo si todas las expresiones son verdaderas. En caso de que alguna sea false, automaticamente se evaluara como false, no se ejecutara el resto de la expresion.
+OR (||): Devuelve verdadero si almenos una de las expresiones es verdadera, solo en caso de que todas sean false devolvera este valor. No se ejecutara el resto de la expresion si se encuentra una expresion verdadera.
+NOT(!): Devuelve el valor opuesto booleano de la expresion dada. A diferencia de los demas operadores solo se puede utilizar con una expresion y, ademas, se escribe a la izquierda de la misma.
