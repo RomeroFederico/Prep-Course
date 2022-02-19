@@ -1,0 +1,63 @@
+Objetos:
+
+Un ojeto es un tipo de dato el cual puede contener mas de un valor asignado, pero que a diferencia de las matrices, se utiliza para contener informacion sore una sola "cosa" en especifico.
+Se puede instanciar con ({}), creando uno vacio.
+
+Para acceder a sus valores se utiliza la notacion clave:valor.
+- clave: 'string' que hara referencia al valor. Se puede acceder a los mismos con obj.clave o con obj[clave]. Se denominan atributos por lo general 
+- valor: cualquier tipo de dato, incluidos otros objetos.
+
+Para instanciar un objeto con atributos definidos se utiliza:
+const objeto = {
+    claveUno : "valor",
+    claveDos : 0,
+    ...
+    claveDiez : true
+};
+
+Se puede eliminar propiedades con la palabra clave 'delete', pero no es una buena practica por lo general. Es mejor estalecer como 'undefined' las propiedades que se quieran 'borrar'.
+
+
+Propiedades:
+
+Las propiedades son datos de los objetos, los cuales se acceden de la siguiente manera:
+objeto.propiedad o objeto["propiedad"].
+Pueden agregarse nuevas propiedas simplemente con:
+objeto.propiedad = "nuevo valor" o objeto["propiedad"] = "nuevo valor".
+
+
+Métodos:
+
+Son funciones propìas de cada objeto, que, al igual que las funciones "ordinarias" tal y como las conocemos, pueden o no devolver un valor, como asi tambien "tomar" datos de afuera con los argumentos.
+Se llama a ellos con la notacion '.' => objeto.metodo()
+Tambien puede utilizarse la notacion con [] para ejecutarlos, pero no es una buena practica.
+
+Para definirlos puede utilizarse las siguientes maneras:
+
+const nuevoObjeto = {
+
+    decirHola: function() {
+        console.log('Hola a todo el mundo!');
+    } // guardado en un atributo.
+
+    function decirHola2(nombre) {
+        console.log('Hola' + nombre + '!');
+    }
+}
+
+Un metodo dentro de un objeto para acceder a los atributos del mismo tiene acceso a la palabra clave 'this', la cual hace referencia al objeto. Para llamar a sus metodos o acceder a sus atributos puede utilizar tanto los corchetes como la notacion con punto (this.atributo o this["saludar"]()).
+
+
+Bucle for…in:
+
+Esta iteracion se utiliza en conjunto de los objetos para recorrer cada uno de sus pares clave:valor.
+for (let clave in objeto) { ... } // Siendo clave un string.
+Para acceder al valor asociado a la clave se utiliza la notacion con corchetes.
+
+
+Notación de puntos vs notación de corchetes:
+
+Se puede acceder tanto a los atributos como a los metodos de un objeto con la notacion de puntos o con la de corchetes.
+- La notacion de puntos se suele utilizar cuando se conoce la clave asociada al metodo o atriuto.
+- La notacion de corchetes se suele utilizar cuando no se conoce el nombre de la clave asociada, como por ejemplo al recorrer las claves con un 'for...in'. Debe utilizarse una cadena como argumento.
+
