@@ -1,0 +1,33 @@
+prototype:
+
+Se utilizan estos para poder definir metodos en una clase ('plantillas' utilizadas para crear objetos que compartan similares caracteristicas -propiedades y metodos-), y no tener que recrear una y otra vez sus metodos para cada instancia.
+
+Cada clase tiene acceso a la propiedad 'prototype', y en ella se pueden asignar nuevos metodos:
+
+MiClase.prototype.saludar = function () {
+	console.log("Hola, me llamo " + this.nombre + " y tu?");
+} // Al igual que los metodos de clases/objetos, tiene acceso a 'this' como referencia al objeto/clase que la alberga.
+
+Tambien es posible sobreescribir el prototipo, especialmente util en la herencia de clases, asignando el prototipo de la clase padre al hijo. Esto permite la utilizacion de constructores anidados.
+
+
+Constructors (de Clases):
+
+Un constructor de clase es un metodo que es llamado cada vez que se instancia un nuevo objeto de una determinada clase. Este permite inicializar los atributos del objeto, pudiendo depender o no de los argumentos pasados a la funcion.
+
+function Padre(argumento) {
+	this.argumento = argumento;
+	this.id = "0001";
+} // this hara referencia al nuevo objeto.
+
+Tambien es posible anidar constructores en lo que se denomina herencia.
+
+function Hijo(argumento, otroArgumento) {
+	Padre.call(this, argumento);
+	this.otroArgumento = otroArgumento;
+} // 'call' llama al constructor 'Padre' y almacena los atributos que se guardarian normalmente en 'Padre' en el nuevo objeto 'Hijo'. Luego de esto se pueden asignar los atributos propios de la clase heredada.
+
+Cabe destacar que cualquier metodo prototype del padre no se heredara automaticamente al hijo. Hay que sobreescribir el prototipo del hijo para cumplir esto.
+
+Hijo.prototype = Object.create(Padre.prototype); // Sobreescribo el prototipo de la clase heredada, a partir de aca se tiene acceso a los metodos prototipos del padre.
+Hijo.prototype.constructor = Hijo; // Vuevo a asignar el constructor del hijo previamente definido, sino al instanciar un objeto 'Hijo' se devolveria un objeto 'Padre' ya que al copiar el prototipo tambien se copio el constructor.
