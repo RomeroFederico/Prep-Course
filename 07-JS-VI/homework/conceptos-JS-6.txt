@@ -1,0 +1,18 @@
+Funciones Callback:
+
+Javascript tiene la capacidad de poder pasar funciones, ya sea definidas en variables, anonimas o funciones como tal; atraves de los argumentos de otras funciones. Estas pueden llamarse en cualquier momento haciendo referencia al argumento designado a estas, lo que permite ejecutar funciones, pudiendo ser diferentes, sin conocer cual es exactamente en el flujo de programa. Suelen denominarse 'cb'.
+
+function suma(varUno, varDos) {
+	return varUno + varDos;
+}
+
+var resta = function (varUno, varDos) {
+	return varUno - varDos;
+}
+
+function ejecutarOperacion(cb, varUno, varDos) {
+	return cb(varUno, varDos);
+} // Esta funcion ejecutara el callback, sabiendo unicamente que le debe pasar dos argumentos (en algunos casos ni es necesario que compartan la misma cantidad de argumentos).
+
+console.log(ejecutarOperacion(suma, 1, 50)); // 51
+console.log(ejecutarOperacion(resta, 1, 50)); // -49
