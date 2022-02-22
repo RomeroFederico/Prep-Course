@@ -12,7 +12,9 @@ body {
 	padding-top: 50px;
 	padding-bottom: 50px;
 
-	font-family: "Arial", Times, serif;
+	font-family: "Oswald", "Arial", Times, serif;
+
+	font-weight: 300;
 }
 
 #idDivHoja {
@@ -21,23 +23,60 @@ body {
 
 	background-color: white;
 
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 
 	display: flex;
+
+	position: relative;
+}
+
+.divHeaderBarra {
+	position: absolute;
+
+	width: 540px;
+	height: 60px;
+
+	top: 160px;
+
+	background-color: rgb(240, 190, 30);
+
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+
+	color: black;
+
+	font-size: 28px;
+
+	font-weight: 400;
+
+	padding-left: 260px;
 }
 
 /*
 	Panel lateral
 */
 #idDivPanelLateral {
-	background-color: rgb(65, 65, 65);
-	width: 30%;
+	background-color: rgb(15, 30, 50);
+	width: 220px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: flex-start;
 
 	color: white;
+}
+
+.divPanelFoto {
+	height: 220px;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	background-color: rgb(60, 60, 70);
 }
 
 #idFoto {
@@ -45,10 +84,10 @@ body {
 	width: 140px;
 	height: auto;
 
-	border: solid lightgray 2px;
-	background-color: lightgray;
+	border: solid white 5px;
+	background-color: darkgray;
 
-	margin-top: 50px;
+	z-index: 20;
 }
 
 #idDivDatosPanelLateral {
@@ -66,9 +105,11 @@ body {
 
 .spanSubtitulo {
 	letter-spacing: 5px;
-	font-weight: 500;
+	font-weight: 600;
 
-	margin-top: 40px;
+	margin-top: 15px;
+
+	color: rgb(200, 165, 120);
 }
 
 .divLinea {
@@ -96,7 +137,7 @@ body {
 	letter-spacing: 2px;
 	font-size: 12px;
 	margin: 0 0 2px 15px;
-	opacity: 0.7;
+/*	opacity: 0.7;*/
 }
 
 .cursiva {
@@ -112,10 +153,58 @@ body {
 }
 
 .divLen {
-	font-size: 12px;
-	opacity: 0.7;
+	/*opacity: 0.7;*/
+	font-size: 13px;
 }
 
 .divCirculos {
 	padding-right: 20px;
+}
+
+.fa-lg {
+	width: 20px;
+}
+
+.divHobies {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+
+	position: relative;
+}
+
+#idDivHeader {
+	height: 220px;
+	width: 580px;
+
+	background-color: rgb(60, 60, 70);
+
+	position: relative;
+
+	z-index: 1;
+}
+
+i {
+	color: rgba(240, 190, 30, 1);
+}
+
+.divTituloHeader {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	font-size: 50px;
+	font-weight: 100;
+	color: rgba(250, 250, 250, 1);
+}
+
+.divSubtituloHeader {
+	position: absolute;
+	bottom: 60px;
+	left: 40px;
+	font-size: 50px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	color: rgba(240, 190, 30, 1);
 }
