@@ -1,0 +1,358 @@
+/*
+	m	M	b	B	g	G
+*/
+
+body {
+	background-color: lightblue;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	font-family: "Oswald", "Arial", Times, serif;
+
+	font-weight: 300;
+}
+
+#idDivHoja {
+	height: 1130px;
+	width: 800px;
+
+	background-color: white;
+
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+
+	display: flex;
+
+	position: relative;
+}
+
+.divHeaderBarra {
+	position: absolute;
+
+	width: 540px;
+	height: 60px;
+
+	top: 160px;
+
+	background-color: rgb(240, 190, 30);
+
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+
+	color: black;
+
+	font-size: 28px;
+
+	font-weight: 400;
+
+	padding-left: 260px;
+}
+
+/*
+	Panel lateral
+*/
+#idDivPanelLateral {
+	background-color: rgb(15, 30, 50);
+	width: 220px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+
+	color: white;
+}
+
+.divPanelFoto {
+	height: 220px;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	background-color: rgb(60, 60, 70);
+}
+
+#idFoto {
+
+	width: 140px;
+	height: auto;
+
+	border: solid white 5px;
+	background-color: darkgray;
+
+	z-index: 20;
+}
+
+#idDivDatosPanelLateral {
+
+	min-height: 800px;
+	width: 85%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+	margin-left: 15%;
+}
+
+.spanSubtitulo {
+	letter-spacing: 5px;
+	font-weight: 600;
+
+	margin-top: 15px;
+
+	color: rgb(200, 165, 120);
+}
+
+.divLinea {
+	height: 2px;
+	width: 100%;
+  	background: white;
+  	margin: 10px 0 10px 0;
+}
+
+.divDatosSeccionPanel {
+	display: flex;
+	align-items: center;
+
+	margin-top: 10px;
+}
+
+.divDatos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.spanDatos {
+	display: block;
+	letter-spacing: 2px;
+	font-size: 12px;
+	margin: 0 0 2px 15px;
+/*	opacity: 0.7;*/
+}
+
+.cursiva {
+	display: inline-block;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 11px;
+}
+
+.DivLenPanel {
+	justify-content: space-between;
+	width: 100%;
+}
+
+.divLen {
+	/*opacity: 0.7;*/
+	font-size: 13px;
+}
+
+.divCirculos {
+	padding-right: 20px;
+}
+
+.fa-lg {
+	width: 20px;
+}
+
+.divHobies {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+
+	position: relative;
+}
+
+#idDivHeader {
+	height: 220px;
+	width: 580px;
+
+	background-color: rgb(60, 60, 70);
+
+	position: relative;
+
+	z-index: 1;
+}
+
+i {
+	color: rgba(240, 190, 30, 1);
+}
+
+.divTituloHeader {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	font-size: 50px;
+	font-weight: 100;
+	color: rgba(250, 250, 250, 1);
+}
+
+.divSubtituloHeader {
+	position: absolute;
+	bottom: 60px;
+	left: 40px;
+	font-size: 50px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	color: rgba(240, 190, 30, 1);
+}
+
+/* Cuerpo principal */
+#divCuerpoPrincipal {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 580px;
+	height: 910px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.divEscuela {
+
+}
+
+.divFacultad {
+
+}
+
+.divSerenisima {
+
+}
+
+.divC {
+
+}
+
+.divC-sharp {
+
+}
+
+.divJavascript {
+
+}
+
+.divPHP {
+
+}
+
+.divMySQL {
+
+}
+
+.divBloqueDatosCuerpo {
+	width: 120px;
+	height: 120px;
+}
+
+.divCirculoContenedor {
+	background-color: rgba(240, 190, 30, 0.7);
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.imgCirculo {
+	width: 65px;
+	height: auto;
+
+	filter: grayscale(100%);
+}
+
+.imgAncha {
+	width: 100px;
+	height: auto;
+}
+
+.imgAnchaLarga {
+	width: 60px;
+	height: auto;
+}
+
+.divTextoDescripcion {
+	font-size: 11px;
+	font-weight: 500;
+
+	margin: 5px;
+	margin-right: 30px;
+}
+
+.text-titulo {
+	font-size: 15px;
+
+	letter-spacing: 3px;
+}
+
+.text-fecha {
+	font-size: 10px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.text-body {
+	font-family: sans-serif;
+	text-align: left;
+}
+
+.divTitleCuerpo {
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	letter-spacing: 3px;
+
+	margin-left: 26px;
+
+	margin-right: 20px;
+}
+
+.divContenedorCuerpoText {
+	margin-left: 35px;
+	padding-left: 35px;
+
+	margin-bottom: 15px;
+
+	border-left: solid rgba(240, 190, 30, 1) 1px;
+}
+
+.question {
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.divRespuesta {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	margin-right: 35px;
+}
+
+.text-respuesta {
+	text-align: right;
+	font-style: italic;
+
+	font-size: 12px;
+}
+
+.ico-respuesta {
+	line-height: 1 !important;
+}

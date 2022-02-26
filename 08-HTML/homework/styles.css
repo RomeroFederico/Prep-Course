@@ -1,0 +1,64 @@
+h1 {
+	color: lightgreen;
+}
+
+img {
+	height: auto;
+	width: 400px;
+}
+
+#thirdDiv {
+	height: 600px;
+	width: 500px;
+
+	padding: 50px 50px 50px 50px;
+
+	border: solid 3px rgb(100, 100, 100, 0.8);
+
+	background-color: rgb(26, 26, 26, 0.8);
+}
+
+#spanId {
+	font-size: 18px;
+	
+	margin: 50px 50px 50px 50px;
+
+	font-style: italic;
+	font-weight: bolder;
+}
+
+body {
+	background-image: url("img/fondo.jpg");
+	background-size: 100% auto;
+	background-attachment: fixed;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 50px;
+
+	color: white;
+}
+
+.divClass {
+	text-align: center;
+
+	border: solid 3px rgb(100, 100, 100, 0.8);
+
+	background-color: rgb(26, 26, 26, 0.8);
+
+	padding: 30px;
+}
+
+a {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
+	padding: 10px;
+
+	border: solid 3px rgb(100, 100, 100, 0.8);
+
+	background-color: rgb(26, 26, 26, 0.8);
+}
